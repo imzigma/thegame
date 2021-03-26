@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego de piedra, papel ó tijera realizado con javascript">
+    <meta name="keywords" content="juego">
+    <meta name="author" content="imzigma">
+    <link rel="icon" href="./assets/tocar.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/main.css">
+    <title>ImZgima | Piedra, Papel ó Tijeras</title>
+</head>
+<body>
+    <header>
+        <h1>Piedra, Papel ó Tijeras</h1>
+        <h2>THE GAME</h2>
+    </header>
+    <div class="result">
+        <p>¡Vamos a jugar!</p>
+    </div>
+    <div class="opciones">
+        <div class="choise" id="r">
+            <img src="./assets/piedra.svg" alt="imgpiedra">
+        </div>
+        <div class="choise" id="p">
+            <img src="./assets/papel.svg" alt="imgpapel">
+        </div>
+        <div class="choise" id="t">
+            <img src="./assets/tijeras.svg" alt="imgtijeras">
+        </div>
+    </div>
+    <div class="marcador">
+        <div class="user-label badge">USER</div>
+        <div class="comp-label badge">PC</div>
+        <span id="user-score">0</span> :
+        <span id="comp-score">0</span>
+    </div>
+    <div class="container_boton">
+        <input class="boton" type="button" value="Recargar juego" onclick="location.reload()">
+    </div>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>
